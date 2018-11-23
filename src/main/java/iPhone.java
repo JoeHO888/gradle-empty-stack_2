@@ -6,6 +6,10 @@ public class iPhone extends Mobile {
 
     @Override
     public void makeCall(String message){
-        System.out.print("<iPhone>Message : "+message+", "+message);
+        if (message.length()<=30){
+            System.out.print("<iPhone>Message : " + message + ", " + message);
+        }else{
+            System.out.print("Excess word limit");
+        }
     }
 }

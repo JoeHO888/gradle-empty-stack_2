@@ -6,6 +6,10 @@ public class Android extends Mobile {
 
     @Override
     public void makeCall(String message){
-        System.out.print("<Android>Message : "+message+", "+message);
+        if (message.length()<=20){
+            System.out.print("<Android>Message : " + message + ", " + message);
+        }else{
+            System.out.print("Excess word limit");
+        }
     }
 }

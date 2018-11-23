@@ -15,16 +15,38 @@ public class App {
 
         System.out.print("\n-------------\n");
 
-        Mobile iphone = new iPhone("mobile","red","iPhone");
+        iPhone iphone = new iPhone("mobile","red","iPhone");
         iphone.makeCall("hi");
         System.out.print("\n");
         System.out.print(iphone.getBasicInfo());
 
         System.out.print("\n-------------\n");
 
-        Mobile android = new Android("mobile","red","Adnroid");
+        Android android = new Android("mobile","red","Adnroid");
         android.makeCall("hi");
         System.out.print("\n");
         System.out.print(android.getBasicInfo());
+
+        System.out.print("\n-------------\n");
+
+        Person personA = new Person(android);
+        personA.makeCall("-----------------------");
+
+        System.out.print("\n-------------\n");
+
+        Person personB = new Person(iphone);
+        personB.makeCall("-------------------------------------------------------");
+
+
+        System.out.print("\n-------------\n");
+
+        IPhoneRobot iPhoneRobot = new IPhoneRobot(iphone);
+        iPhoneRobot.makeCall("-------------------------------------------------------");
+
+        System.out.print("\n-------------\n");
+        personB.setMobile(android);
+        System.out.print(personB.getBasicInfo());
+
+
     }
 }
