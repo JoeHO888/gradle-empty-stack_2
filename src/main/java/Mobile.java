@@ -14,4 +14,8 @@ public class Mobile {
     public void makeCall(String message){
         System.out.print("Message : "+message+", "+message);
     }
+
+    public String getBasicInfo(){
+        return "name: "+this.name+", color: "+this.color+", brand: "+this.brand;
+    }
 }

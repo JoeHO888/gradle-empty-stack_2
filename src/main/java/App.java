@@ -10,15 +10,21 @@ public class App {
 
         Mobile mobile = new Mobile("mobile","red","brandNull");
         mobile.makeCall("hi");
+        System.out.print("\n");
+        System.out.print(mobile.getBasicInfo());
 
         System.out.print("\n-------------\n");
 
-        Mobile iphone = new iPhone("mobile","red","brandNull");
+        Mobile iphone = new iPhone("mobile","red","iPhone");
         iphone.makeCall("hi");
+        System.out.print("\n");
+        System.out.print(iphone.getBasicInfo());
 
         System.out.print("\n-------------\n");
 
-        Mobile android = new Android("mobile","red","brandNull");
+        Mobile android = new Android("mobile","red","Adnroid");
         android.makeCall("hi");
+        System.out.print("\n");
+        System.out.print(android.getBasicInfo());
     }
 }
